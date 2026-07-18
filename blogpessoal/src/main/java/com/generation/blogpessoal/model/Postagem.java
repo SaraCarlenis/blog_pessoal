@@ -13,8 +13,8 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
-@Entity //Gera uma tabela no meu banco. JPA
-@Table(name = "tb_postagens") // Definimos o nome da tabela no meu banco. Seria equivalente ao fazer no MySQL > CREATE TABLE tb_postagens();
+@Entity //Gera uma tabela no meu banco. JPA. Diz ao JPA que essa classe é uma entidade, ou seja, será mapeada para uma tabela no banco.
+@Table(name = "tb_postagens") // Definimos o nome da tabela tb_postagens no meu banco. Seria equivalente ao fazer no MySQL > CREATE TABLE tb_postagens();
 
 public class Postagem {
 	
