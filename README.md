@@ -12,9 +12,9 @@
   <img src="https://img.shields.io/github/languages/top/SaraCarlenis/blog_pessoal?style=flat-square" />
   <img src="https://img.shields.io/github/repo-size/SaraCarlenis/blog_pessoal?style=flat-square" />
   <img src="https://img.shields.io/github/languages/count/SaraCarlenis/blog_pessoal?style=flat-square" />
-  <img src="https://img.shields.io/github/last-commit/SaraCarlenis/blog_pessoall_?style=flat-square" />
-  <img src="https://img.shields.io/github/issues/SaraCarlenis/blog_pessoal_?style=flat-square" />
-  <img src="https://img.shields.io/github/issues-pr/SaraCarlenis/blog_pessoal_?style=flat-square" />
+  <img src="https://img.shields.io/github/last-commit/SaraCarlenis/blog_pessoall?style=flat-square" />
+  <img src="https://img.shields.io/github/issues/SaraCarlenis/blog_pessoal?style=flat-square" />
+  <img src="https://img.shields.io/github/issues-pr/SaraCarlenis/blog_pessoal?style=flat-square" />
   <img src="https://img.shields.io/badge/status-construção-yellow" alt="Status: Em Construção">
 </div>
 
