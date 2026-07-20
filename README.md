@@ -9,12 +9,12 @@
 <br />
 
 <div align="center">
-  <img src="https://img.shields.io/github/languages/top/SaraCarlenis/blog_pessoal_spring?style=flat-square" />
-  <img src="https://img.shields.io/github/repo-size/SaraCarlenis/blog_pessoal_spring?style=flat-square" />
-  <img src="https://img.shields.io/github/languages/count/SaraCarlenis/blog_pessoal_spring?style=flat-square" />
-  <img src="https://img.shields.io/github/last-commit/SaraCarlenis/blog_pessoall_spring?style=flat-square" />
-  <img src="https://img.shields.io/github/issues/SaraCarlenis/blog_pessoal_spring?style=flat-square" />
-  <img src="https://img.shields.io/github/issues-pr/SaraCarlenis/blog_pessoal_spring?style=flat-square" />
+  <img src="https://img.shields.io/github/languages/top/SaraCarlenis/blog_pessoal?style=flat-square" />
+  <img src="https://img.shields.io/github/repo-size/SaraCarlenis/blog_pessoal?style=flat-square" />
+  <img src="https://img.shields.io/github/languages/count/SaraCarlenis/blog_pessoal?style=flat-square" />
+  <img src="https://img.shields.io/github/last-commit/SaraCarlenis/blog_pessoall_?style=flat-square" />
+  <img src="https://img.shields.io/github/issues/SaraCarlenis/blog_pessoal_?style=flat-square" />
+  <img src="https://img.shields.io/github/issues-pr/SaraCarlenis/blog_pessoal_?style=flat-square" />
   <img src="https://img.shields.io/badge/status-construção-yellow" alt="Status: Em Construção">
 </div>
 
@@ -171,7 +171,7 @@ Para executar os códigos localmente, você precisará:
 
 ### 7.1. Importando o Projeto
 
-1. Clone o repositório do Projeto [Blog Pessoal](https://github.com/SaraCarlenis/blog_pessoal_spring) dentro da pasta do *Workspace* do STS
+1. Clone o repositório do Projeto [Blog Pessoal](https://github.com/SaraCarlenis/blog_pessoal) dentro da pasta do *Workspace* do STS
 
 ```bash
 git clone https://github.com/SaraCarlenis/blog_pessoal.git
