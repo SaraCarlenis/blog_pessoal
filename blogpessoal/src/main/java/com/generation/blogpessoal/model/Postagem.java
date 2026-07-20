@@ -4,11 +4,14 @@ import java.time.LocalDateTime;
 
 import org.hibernate.annotations.UpdateTimestamp;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -20,7 +23,7 @@ public class Postagem {
 	
 	@Id //Atributo id é a chave primaria da minha tabela. 
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // AUTO_INCREMENT
-	private long id;
+	private Long id;
 	
 	@NotBlank(message = "Atributo titulo é obrigatório!") //Quero que o titulo seja obrigatorio e não pode ter espaços em branco
 	@Size(min = 5, max = 100, message = "O atributo título deve ter no mínimo 5 e no máximo 100 caracteres") // Cofigura os caracteres: No minino ter 5 carateres max 100
@@ -35,12 +38,24 @@ public class Postagem {
 	
 	@UpdateTimestamp //atualiza data e hora na hora que atualizar e criar
 	private LocalDateTime data;
+	
+	@ManyToOne
+	@JsonIgnoreProperties("postagem")
+	private Tema tema;
 
-	public long getId() {
+	public Tema getTema() {
+		return tema;
+	}
+
+	public void setTema(Tema tema) {
+		this.tema = tema;
+	}
+
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
