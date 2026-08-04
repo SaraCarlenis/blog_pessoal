@@ -7,20 +7,17 @@ COPY .mvn .mvn
 COPY pom.xml .
 COPY src src
 
-RUN chmod -R 777 ./mvnw
+RUN chmod +x ./mvnw
 
-RUN ./mvnw install -DskipTests
+RUN ./mvnw clean package -DskipTests
 
-RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
 FROM eclipse-temurin:17-jdk
 
-VOLUME /tmp
+WORKDIR /app
 
-ARG DEPENDENCY=/workspace/app/target/dependency
+COPY --from=build /workspace/app/target/*.jar app.jar
 
-COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
-COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
-COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
+EXPOSE 8080
 
-ENTRYPOINT ["java","-cp","app:app/lib/*","com.generation.blogpessoal.BlogpessoalApplication"]
+ENTRYPOINT ["java","-jar","app.jar"]
