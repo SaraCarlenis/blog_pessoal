@@ -28,7 +28,7 @@ public class SwaggerConfig {
                 .version("v0.0.1")
                 .license(new License()
                     .name("Linkedin")
-                    .url("www.linkedin.com/in/sara-hurtado-cortes"))
+                    .url("https://www.linkedin.com/in/sara-hurtado-cortes/"))
                 .contact(new Contact()
                     .name("Sara Cortes")
                     .url("https://github.com/SaraCarlenis")
