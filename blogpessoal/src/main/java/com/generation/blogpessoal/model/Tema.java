@@ -26,7 +26,7 @@ public class Tema {
 	private Long id;
 	
 	@NotBlank(message = "Atributo Descrição é Obrigatório!")
-	@Size(min = 10, max = 255, message = "A descrição deve ter no mínimo 10 e no máximo 255 caracteres")
+	@Size(max = 255, message = "O atributo descrição deve conter no máximo 255 caracteres")
 	@Column(length = 255)
 	private String descricao;
 	
